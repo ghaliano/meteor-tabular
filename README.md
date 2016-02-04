@@ -9,7 +9,7 @@ A Meteor package that creates reactive [DataTables](http://datatables.net/) in a
 * Hot Code Push Ready: Remains on the same data page after a hot code push.
 
 Although this appears similar to the [jquery-datatables](https://github.com/LumaPictures/meteor-jquery-datatables) Meteor package, there are actually many differences:
-
+this
 * This package is updated to work with Meteor 1.0+.
 * This package has a much smaller codebase and includes less of the DataTables library.
 * This package allows you to specify a Spacebars template as a cell's content.
@@ -196,7 +196,7 @@ Client JavaScript:
 ```js
 Template.bookCheckOutCell.events({
   'click .check-out': function () {
-    addBookToCheckoutCart(this._id);
+    addBookToCheckoutCart(this.item._id);
   }
 });
 ```
